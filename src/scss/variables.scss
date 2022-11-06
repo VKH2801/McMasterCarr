@@ -1,6 +1,4 @@
-// Font import
-@import url("http://fonts.cdnfonts.com/css/clash-display");
-@import url("http://fonts.cdnfonts.com/css/satoshi");
+
 
 /*
  * sizes
@@ -10,21 +8,5 @@ $tablet-width: 900px;
 $desktop-width: 1200px;
 
 
-//Import your scss files here
-
-// ------------ Import your scss files here ---------------
-
-// Import Atoms Components
 
 
-// Import molecules Components
-
-
-
-// Import organisms Components
-@import '../components/organisms/FooterFloat/FooterFloat.scss';
-@import '../components/organisms/FooterHomePage/FooterHomePage.scss';
-@import '../components/organisms/Header/Header.scss';
-@import '../components/organisms/LeftNavBar/LeftNavBar.scss';
-@import '../components/organisms/ShuffleProductsView/ShuffleProductsView.scss';
-@import '../components/organisms/AllCategoriesView/AllCategoriesView.scss';
