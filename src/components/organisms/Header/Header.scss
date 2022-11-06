@@ -1,0 +1,229 @@
+@include tablet {
+  .header {
+    display: flex;
+    height: 73px;
+    border-bottom: 2px solid #fed700;
+    box-shadow: 0 7px 0 0 #fff;
+    min-width: 525px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: {
+      transition-duration: 0.3s, 0.5s;
+      transition-timing-function: ease, ease;
+      transition-delay: 0s, 0s;
+      transition-property: height, transform;
+    }
+    .browseCatalog_ButtonContainer {
+      display: flex;
+      float: left;
+      flex-direction: row;
+    }
+    .browseCatalog_Button {
+      background-color: transparent;
+      border: 0 solid transparent;
+      color: #363;
+      cursor: pointer;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.035em;
+      margin-top: -3px;
+      margin-left: 2px;
+    }
+    .browseCatalog_ButtonImg {
+      width: 11px;
+      height: 11px;
+      cursor: pointer;
+    }
+    .mastHeader-top-right {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      right: 24px;
+      top: 14px;
+      -webkit-transition: right 0.2s;
+      transition: right 0.2s;
+    }
+    .link-wrapper {
+      display: inline-block a {
+        color: #666;
+        font-size: 15px;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .masthead-top-right-link-cursor-default {
+      color: #666;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .divider {
+      background-color: #878787;
+      display: inline-block;
+      height: 10px;
+      width: 1px;
+      margin: 3px 12px;
+    }
+    .dialog {
+      background: #fff;
+      border: 1px solid #cbcbcb;
+      border-top: 2px solid #fed700;
+      box-shadow: 0 5px 7px #cbcbcb;
+      overflow: hidden;
+      position: absolute;
+      right: 76px;
+      top: 27px;
+      -webkit-transition: opacity 0.15s ease-out, height 0.2s ease-out;
+      transition: opacity 0.15s ease-out, height 0.2s ease-out;
+      width: 500px;
+      z-index: 10000;
+      header {
+        background-color: #f2f2f2;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10px 0 0 25px;
+        .title {
+          color: #363;
+          font-size: 16px;
+        }
+        .subTitle {
+          color: #000;
+          font-size: 12px;
+          margin-top: 5px;
+          padding-bottom: 3px;
+        }
+        .buttonClose {
+          background-image: url(https://images1.mcmaster.com/mvD/gfx/ex.png?ver=1524877256);
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          height: 20px;
+          right: 20px;
+          position: absolute;
+          top: 13px;
+          width: 13px;
+        }
+      }
+      .form-input-wrapper {
+        display: block;
+        overflow: hidden;
+        .form-input {
+          border: 0;
+          width: 100%;
+          background-color: 0;
+        }
+      }
+    }
+    .form-label {
+      float: left;
+      margin-right: 10px;
+    }
+    .form-section {
+      color: #777;
+      padding: 12px 25px;
+    }
+    .section_form {
+      border-bottom: 1px solid #cbcbcb;
+    }
+    .section_form:last-child {
+      border: 0;
+    }
+    .message-section {
+      max-height: 384px;
+      min-height: 200px;
+      padding: 20px 20px 20px 25px;
+      overflow: auto;
+    }
+    .expanding-area {
+      position: relative;
+      background: #fff;
+      pre {
+        background: transparent;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    }
+    .active {
+      textarea {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        resize: none;
+        box-sizing: border-box;
+        background: transparent;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+    footer {
+      height: 50px;
+      position: relative;
+      padding: 15px 25px;
+    }
+    .left-container {
+      left: 25px;
+      position: absolute;
+      top: 15px;
+      .button-send-feedback {
+        float: left;
+        margin: 0;
+        display: inline;
+        font-size: 0.75rem;
+        padding: 3px 15px;
+        color: #fff;
+        border: 1px solid #363;
+        background-color: #363;
+        cursor: pointer;
+      }
+      .link-cancel-feedback {
+        float: left;
+        margin: 4px 0 0 15px;
+        padding-left: 0;
+        display: inline;
+        cursor: pointer;
+      }
+      .footer-message-container {
+        float: left;
+        margin: 4px 0 0 15px;
+        pointer-events: none;
+      }
+    }
+    .right-container {
+      position: absolute;
+      margin-left: 5%;
+      right: 25px;
+      top: 15px;
+      .email-message {
+        color: #999;
+        float: right;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 4px;
+        a {
+          color: #999;
+          cursor: pointer;
+        }
+      }
+    }
+    
+  }
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-out 0.15s, opacity 0.15s ease-out, height 0s;
+  }
+}
