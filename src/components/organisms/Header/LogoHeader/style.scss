@@ -1,0 +1,19 @@
+@include tablet {
+    .shell-layout-logo-container {
+        bottom: 5px;
+        position: absolute;
+        left: 11px;
+        width: auto;
+        -webkit-transition: bottom .3s,-webkit-transform .5s;
+        transition: bottom .3s,transform .5s;
+    }
+		.logo-web-part {
+			#LogoWebPart_Link {
+				display: block;
+			}
+			a img {
+				height: 32px;
+				width: auto;
+			}
+		}
+}

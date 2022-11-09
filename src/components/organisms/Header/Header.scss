@@ -16,6 +16,10 @@
       transition-delay: 0s, 0s;
       transition-property: height, transform;
     }
+    .Clear,
+    .an {
+      clear: both;
+    }
     .browseCatalog_ButtonContainer {
       display: flex;
       float: left;
@@ -27,15 +31,16 @@
       color: #363;
       cursor: pointer;
       float: left;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: bold;
       letter-spacing: 0.035em;
-      margin-top: -3px;
+      margin-top: 0px;
       margin-left: 2px;
     }
     .browseCatalog_ButtonImg {
-      width: 11px;
-      height: 11px;
+      width: 9px;
+      height: 9px;
+      margin-left: 5px;
       cursor: pointer;
     }
     .mastHeader-top-right {
@@ -96,17 +101,6 @@
           font-size: 12px;
           margin-top: 5px;
           padding-bottom: 3px;
-        }
-        .buttonClose {
-          background-image: url(https://images1.mcmaster.com/mvD/gfx/ex.png?ver=1524877256);
-          background-repeat: no-repeat;
-          background-position: center;
-          cursor: pointer;
-          height: 20px;
-          right: 20px;
-          position: absolute;
-          top: 13px;
-          width: 13px;
         }
       }
       .form-input-wrapper {
@@ -219,11 +213,249 @@
         }
       }
     }
-    
   }
   .hide {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s ease-out 0.15s, opacity 0.15s ease-out, height 0s;
+  }
+  #LoginUsrCtrlWebPart_LoginLnk {
+    color: #333;
+    float: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0;
+  }
+  #_CrtePswdAlertCntnr {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    svg {
+      fill: #333;
+      margin: 6px 2px 1px 3px;
+      height: 6px;
+      width: 10px;
+    }
+  }
+  #MastheadLoginInner {
+    z-index: 10000;
+    background: #fff;
+    padding: 5px 4px 5px 5px;
+  }
+  .container--loginbox {
+    position: absolute;
+    z-index: 3;
+    top: 7px;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px 4px 5px 5px;
+    white-space: normal;
+    text-transform: none;
+    background: #fff;
+    box-shadow: 0 5px 7px rgb(0 0 0 / 30%);
+    border-top: 2px solid #fed700;
+  }
+  .MastheadLoginInner_Show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s ease-out;
+  }
+  #MastheadLoginInner_Content {
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+  }
+  .CloseFrameIcon_button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    float: right;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 16px;
+    position: relative;
+    height: 20px;
+    width: 16px;
+  }
+  .CloseFrameIcon_closeIcon {
+    background-color: rgba(0, 0, 0, 0);
+    height: 10px;
+    width: 10px;
+    img {
+      outline-style: none;
+    }
+  }
+  .CloseFrameIcon_closeIcon {
+    background-color: rgba(0, 0, 0, 0);
+    height: 10px;
+    width: 10px;
+  }
+  .CloseFrameIcon_image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .VertSpace_space {
+    height: 8px;
+    width: 100%;
+  }
+  .buttonClose {
+    background-image: url(https://images1.mcmaster.com/mvD/gfx/ex.png?ver=1524877256);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 20px;
+    right: 20px;
+    position: absolute;
+    top: 13px;
+    width: 13px;
+  }
+  .buttonCloseLogIn {
+    background-image: url(https://images1.mcmaster.com/mvD/gfx/ex.png?ver=1524877256);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 20px;
+    width: 13px;
+    position: absolute;
+    left: 285px;
+    top: 10px;
+    float: right;
+  }
+  .LoginDropDown_inset {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 262px;
+    .App {
+      margin: 0;
+      padding: 0;
+    }
+    .CreateLoginFrame_inset {
+      width: inherit;
+    }
+    .CreateLoginFrame_frameHeader {
+      font-size: 16px;
+      font-weight: bold;
+      color: #363;
+    }
+    .Input_neutral {
+      border-color: #878787;
+    }
+    .Input_inputCover {
+      display: block;
+      border: 1px solid;
+      width: 260px;
+      height: 32px;
+      position: relative;
+      cursor: text;
+      background-color: #fff;
+    }
+    .InputField_input {
+      position: relative;
+      height: 28px;
+      float: left;
+      margin-top: 1px;
+      border: #fff;
+      text-indent: 8px;
+      display: block;
+      font-family: arial, sans-serif;
+      font-size: 12px;
+    }
+    .InputField_fullwidth {
+      width: 255px;
+    }
+    .Input_labelFloat {
+      transition-duration: 0.2s;
+      transition-property: all;
+      position: absolute;
+      z-index: 1;
+      display: block;
+      height: 15px;
+      left: 10px;
+      padding: 0 5px;
+      background-color: #fff;
+      font-size: 14px;
+      color: #666;
+      margin-top: -10px !important;
+      line-height: 20px;
+    }
+    .InputField_buttonwidth {
+      width: 213px;
+    }
+    .ShowHideInput_container {
+      float: right;
+      padding-right: 1px;
+    }
+    .ShowHideInput_button {
+      color: #363;
+      background-color: #fff;
+      height: inherit;
+      width: 40px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .Dyad_base {
+      position: relative;
+      overflow: auto;
+      .Dyad_right {
+        float: right;
+        .CreateLoginFrame_link {
+          color: #000;
+          text-decoration: underline;
+          font-weight: 700;
+          cursor: pointer;
+          font-size: 11px;
+          border: 0;
+          background-color: rgba(0, 0, 0, 0);
+          padding: 0;
+          vertical-align: text-top;
+        }
+      }
+      .Dyad_left {
+        float: left;
+        .ValidatedCheckboxInput_customBox {
+          position: relative;
+          top: 0.8px;
+          margin: 0;
+          padding: 0;
+          vertical-align: bottom;
+          height: 12px;
+          width: 12px;
+          background-color: rgba(0, 0, 0, 0);
+          border-radius: 3px;
+          border: 1px solid #666;
+          float: left;
+        }
+        .ValidatedCheckboxInput_text {
+          font-size: 11px;
+          color: #666;
+          cursor: pointer;
+          display: block;
+          padding-left: 20px;
+        }
+      }
+    }
+    .FormButton_primaryButton {
+      color: #fff;
+      border-radius: 3px;
+      border: 1px solid #363;
+      background-color: #363;
+      cursor: pointer;
+      height: 30px;
+      width: 262px;
+      font-size: 14px;
+    }
+    .FormButton_secondaryButton {
+      color: #363;
+      border-radius: 3px;
+      border: 1.5px solid #363;
+      height: 30px;
+      background-color: #fff;
+      width: 262px;
+      font-size: 12px;
+      cursor: pointer;
+    }
   }
 }
