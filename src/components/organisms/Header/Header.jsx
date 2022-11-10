@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import LogoHeader from "./LogoHeader";
-import SearchBarHeader from "./SearchBarHeader";
+import LogoHeader from "../../molecules/LogoHeader/index";
+import SearchBarHeader from "../../molecules/SearchBarHeader/index";
 
 const Header = () => {
   const [openDialogEmailUs, setOpenDialogEmailUs] = useState(false);
