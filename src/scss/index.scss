@@ -15,7 +15,8 @@
 
 
 // Import molecules Components
-
+@import "../components/molecules/LogoHeader/style.scss";
+@import "../components/molecules/SearchBarHeader/style.scss";
 
 
 // Import organisms Components
@@ -25,5 +26,4 @@
 @import '../components/organisms/LeftNavBar/LeftNavBar.scss';
 @import '../components/organisms/ShuffleProductsView/ShuffleProductsView.scss';
 @import '../components/organisms/AllCategoriesView/AllCategoriesView.scss';
-@import "../components/organisms/Header/LogoHeader/style.scss";
-@import "../components/organisms/Header/SearchBarHeader/style.scss";
+
