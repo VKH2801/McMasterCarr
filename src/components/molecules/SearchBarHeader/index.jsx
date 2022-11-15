@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const SearchBarHeader = () => {
   const [displayButtonClear, setDisplayButtonClear] = useState(false);
   const [searchInput, setSearchInput] = useState("");
+  
+  const ref = useRef(null);
+
+  const handleRenderOnChange = () => {
+    if (searchInput === '') {
+      setDisplayButtonClear(false);
+    }
+    else {
+      setDisplayButtonClear(true);
+    }
+  }
+  
+
   return (
     <div
       id="ShellLayout_SrchEntryWebPart_Cntnr"
@@ -42,8 +55,10 @@ const SearchBarHeader = () => {
             autoCapitalize="off"
             maxLength="150"
             value={searchInput}
+            ref={ref}
             onChange={(e) => {
               setSearchInput(e.target.value);
+              handleRenderOnChange();
             }}
           ></input>
           <input
@@ -55,6 +70,23 @@ const SearchBarHeader = () => {
             autoCapitalize="off"
             maxLength="150"
           ></input>
+          {
+            displayButtonClear === true ? (
+              <button
+                id="SrchEntryClearButton"
+                className="clear-button"
+                type="button"
+                title="clear"
+              ></button>
+            ) : (
+              <button
+                id="SrchEntryClearButton"
+                className="clear-button inactive"
+                type="button"
+                title="clear"
+              ></button>
+            )
+          }
           <button
             id="SrchEntryClearButton"
             className="clear-button inactive"
@@ -63,7 +95,7 @@ const SearchBarHeader = () => {
           ></button>
           <span
             id="SrchEntryVerticalSeprt"
-            className="VerticalSeprt inactive"
+            className="VerticalSeprt"
           ></span>
           <button
             type="submit"

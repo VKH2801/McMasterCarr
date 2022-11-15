@@ -1,0 +1,80 @@
+@include tablet {
+  .shell-layout-masthead-nav-container {
+    position: absolute;
+    right: 24px;
+    top: 70px;
+    width: auto;
+    -webkit-transition: top 0.3s, -webkit-transform 0.5s;
+    transition: top 0.3s, transform 0.5s;
+		nav {
+			display: block;
+		}
+    ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+    }
+    .masthead-nav {
+      .li-masthead {
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 48px;
+        white-space: nowrap;
+				a {
+					font-size: 16px;
+					font-family: "FuturaLTPro-BoldCond",arial,sans-serif;
+					text-transform: uppercase;
+					color: #363;
+				}
+				.li-masthead--order {
+					width: 41px;
+				}
+      }
+      
+      .wrapper-ordernotif {
+        min-height: 14px;
+				.wrapper-ordernotifitemview {
+					max-height: 314px;
+				}
+				.badge-masthead--notifs {
+					font-size: 10px;
+					font-size: .625rem;
+					height: 14px;
+					width: 14px;
+					line-height: 14px;
+					border-radius: 7px;
+					position: relative;
+					bottom: 26px;
+					left: 39px;
+					display: block;
+					padding-right: 0;
+					cursor: pointer;
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+					text-align: center;
+					color: #363;
+					background: #fed700;
+				}
+				.wrapper-ordernotiflines {
+					position: absolute;
+					z-index: 999999;
+					top: 28px;
+					right: -24px;
+					min-width: 484px;
+					height: 0;
+					max-height: 0;
+					-webkit-transition: height .5s,max-height .5s,opacity .5s;
+					transition: height .5s,max-height .5s,opacity .5s;
+					opacity: 0;
+				}
+    	}
+    }
+  }
+}
