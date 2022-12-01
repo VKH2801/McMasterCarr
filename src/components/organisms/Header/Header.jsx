@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import LogoHeader from "../../molecules/LogoHeader/index";
 import SearchBarHeader from "../../molecules/SearchBarHeader/index";
+import OrderButtonHeader from '../../molecules/OrderButtonHeader'
+
 
 const Header = () => {
   const [openDialogEmailUs, setOpenDialogEmailUs] = useState(false);
@@ -320,6 +322,7 @@ const Header = () => {
         </div>
         <LogoHeader></LogoHeader>
         <SearchBarHeader></SearchBarHeader>
+        <OrderButtonHeader></OrderButtonHeader>
       </div>
     </header>
   );

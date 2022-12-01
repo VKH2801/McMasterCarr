@@ -1,0 +1,28 @@
+@include tablet {
+  #ShellLayout_MainContent_Cntnr {
+    border-right: 0;
+    border-left: none;
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+  }
+  .ShellLayout_MainContent_Inner_SecondaryContent_Collapsed {
+    height: 100%;
+    .CollapsedSecondaryContentWithHomePageNav{
+        padding: 0 10px 0 0 ;
+        top: 0;
+    }
+    .ShellLayout_MainContent_WebPartContainer {
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+    .homepage-nav-and-categories-container {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+  }
+}
