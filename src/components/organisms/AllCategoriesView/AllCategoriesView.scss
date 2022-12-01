@@ -1,0 +1,47 @@
+@include tablet {
+    .homepage-categories {
+        padding-left: 20px;
+        min-width: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        .WebToolsetToolWebPart_TxtTool_Cntnr {
+            font-family: 'HelveticaNeueeTextPro-Md',arial,sans-serif;
+            font-weight: bold;
+        }
+        .WebToolsetToolWebPart_Aligned_LEFT {
+            font: bold 15px arial,helvetica,sans-serif;
+            position: absolute!important;
+            left: 0!important;
+            bottom: unset;
+        }
+        .WebToolsetToolWebPart_Cntnr {
+            height: inherit;
+            padding: 0 6px;
+            white-space: nowrap;
+            z-index: 9000;
+        }
+    }
+    .ShellLayout_MainContent_WebPartContainer {
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+    .WebToolsetWebPart_Cntnr {
+        background-color: #fff;
+        height: 16px;
+        color: #333;
+        width: inherit;
+        padding-top: 3px;
+        position: fixed;
+        white-space: normal;
+        z-index: 8900;
+        border-bottom: 1px solid #363;
+        padding-bottom: 2px;
+        .toolset-sticky {
+            top: 0;
+            position: sticky;
+        }
+    }
+}

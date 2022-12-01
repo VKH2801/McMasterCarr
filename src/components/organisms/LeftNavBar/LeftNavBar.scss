@@ -1,0 +1,91 @@
+@include tablet {
+    .homepage-nav {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50px;
+        border-style: none solid none none;
+        border-width: 1px;
+        border-color: #CCC;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-flex-basis: 195px;
+        -ms-flex-preferred-size: 195px;
+        flex-basis: 195px;
+        padding-right: 5px;
+        overflow-y: auto;
+    }
+    .home-page-nav-title {
+        height: 25px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        max-width: 179px;
+        position: sticky;
+        top: 0;
+        margin-left: 8px;
+        border-bottom: 1px solid #363;
+        background-color: white;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 3px;
+        padding-bottom: 2px;
+    }
+    #HomePageNavigation {
+        height: unset;
+        flex-basis: 652px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #HomePageCatgs {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 470px;
+        max-height: 630px;
+        a:first-child {
+            margin-top: 5px;
+        }
+        a {
+            flex: 1;
+            overflow: hidden;
+            color: #333;
+            display: block;
+            margin-bottom: 0px;
+            font-size: 13px;
+            font-family: Arial;
+            text-decoration: none;
+            margin-left: 4px;
+            border-left: 4px solid white;
+            padding-left: 12px;
+            padding-right: 0;
+            padding-top: 4px;
+            padding-bottom: 5px;
+            text-indent: -12px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        a:hover {
+            background-color: #ffffb5;
+            text-decoration: underline;
+        }
+        
+    }
+    .HomePageNavCatgLnk_Selected {
+        background-color: #ffe600;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
