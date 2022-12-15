@@ -1,47 +1,351 @@
 @include tablet {
-    .homepage-categories {
-        padding-left: 20px;
-        min-width: 0;
-        -webkit-box-flex: 1;
-        -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        .WebToolsetToolWebPart_TxtTool_Cntnr {
-            font-family: 'HelveticaNeueeTextPro-Md',arial,sans-serif;
-            font-weight: bold;
-        }
-        .WebToolsetToolWebPart_Aligned_LEFT {
-            font: bold 15px arial,helvetica,sans-serif;
-            position: absolute!important;
-            left: 0!important;
-            bottom: unset;
-        }
-        .WebToolsetToolWebPart_Cntnr {
-            height: inherit;
-            padding: 0 6px;
-            white-space: nowrap;
-            z-index: 9000;
-        }
+  .homepage-categories {
+    padding-left: 20px;
+    min-width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    .WebToolsetToolWebPart_TxtTool_Cntnr {
+      font-family: "HelveticaNeueeTextPro-Md", arial, sans-serif;
+      font-weight: bold;
     }
-    .ShellLayout_MainContent_WebPartContainer {
+    .WebToolsetToolWebPart_Aligned_LEFT {
+      font: bold 15px arial, helvetica, sans-serif;
+      position: absolute !important;
+      left: 0 !important;
+      bottom: unset;
+    }
+    .WebToolsetToolWebPart_Cntnr {
+      height: inherit;
+      padding: 0 6px;
+      white-space: nowrap;
+      z-index: 9000;
+    }
+  }
+  .ShellLayout_MainContent_WebPartContainer {
+    display: block;
+    height: 100%;
+    position: relative;
+  }
+  .WebToolsetWebPart_Cntnr {
+    background-color: #fff;
+    height: 25px;
+    color: #333;
+    width: inherit;
+    padding-top: 3px;
+    position: fixed;
+    white-space: normal;
+    z-index: 8900;
+    border-bottom: 1px solid #363;
+    padding-bottom: 2px;
+  }
+  .toolset-sticky {
+    top: 0;
+    position: sticky;
+  }
+  .ShellLayout_MainContent_WebPartContent_Cntnr {
+    display: block;
+    top: 5px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+  }
+  .catg {
+    clear: left;
+    position: relative;
+    zoom: 1;
+    background: white;
+    h1 {
+      display: block;
+      margin-bottom: 5px;
+      cursor: default;
+      color: #363;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+  .subcat {
+    display: inline;
+    float: left;
+    padding-bottom: 12px;
+    ul {
+      display: inline;
+      float: left;
+    }
+    li {
+      display: inline;
+      float: left;
+      width: 71px;
+      height: 114px;
+      overflow: hidden;
+      zoom: 1;
+      vertical-align: top;
+    }
+    li:hover {
+      span {
+        background-color: #ffffc2;
+      }
+    }
+    a {
+      display: block;
+      position: relative;
+      zoom: 1;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: #666;
+      font-size: 11px;
+      font-family: arial, sans-serif;
+      line-height: 1.15;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      span {
         display: block;
-        height: 100%;
         position: relative;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        zoom: 1;
+        background-color: White;
+        border: 1px solid #eee;
+      }
     }
-    .WebToolsetWebPart_Cntnr {
-        background-color: #fff;
-        height: 16px;
-        color: #333;
-        width: inherit;
-        padding-top: 3px;
-        position: fixed;
-        white-space: normal;
-        z-index: 8900;
-        border-bottom: 1px solid #363;
-        padding-bottom: 2px;
-        .toolset-sticky {
-            top: 0;
-            position: sticky;
-        }
+  }
+  
+  .titleSubcat {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: #333;
+    cursor: pointer;
+    padding-left: 5px;
+    white-space: nowrap;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .HP_1_1 {
+    span {
+      background-size: 1320px;
+      background-image: url("https://images1.mcmaster.com/init/gfx/home/Fastening-and-Joining-Fasteners-sprite-120.png?ver=1539608820");
     }
+    .s8 {
+      background-position: -420px;
+    }
+    .s7 {
+      background-position: -360px;
+    }
+    .s1 {
+      background-position: 0px;
+    }
+    .s2 {
+      background-position: -60px;
+    }
+    .s6 {
+      background-position: -300px;
+    }
+    .s12 {
+      background-position: -660px;
+    }
+    .s14 {
+      background-position: -780px;
+    }
+    .s9 {
+      background-position: -480px;
+    }
+    .s11 {
+      background-position: -600px;
+    }
+    .s19 {
+      background-position: -1080px;
+    }
+    .s10 {
+      background-position: -540px;
+    }
+    .s18 {
+      background-position: -1020px;
+    }
+    .s22 {
+      background-position: -1260px;
+    }
+    .s15 {
+      background-position: -840px;
+    }
+    .s13 {
+      background-position: -720px;
+    }
+    .s3 {
+      background-position: -120px;
+    }
+    .s4 {
+      background-position: -180px;
+    }
+    .s17 {
+      background-position: -960px;
+    }
+    .s16 {
+      background-position: -900px;
+    }
+    .s5 {
+      background-position: -240px;
+    }
+    .s21 {
+      background-position: -1200px;
+    }
+    .s20 {
+      background-position: -1140px;
+    }
+  }
+  .HP_1_2 {
+    span {
+      background-size: 180px;
+      background-image: url("https://images1.mcmaster.com/init/gfx/home/Fastening-and-Joining-Adhesives-and-Tape-sprite-120.png?ver=1539608820");
+    }
+    .s1 {
+      background-position: 0px;
+    }
+    .s2 {
+      background-position: -60px;
+    }
+    .s3 {
+      background-position: -120px;
+    }
+  }
+  .HP_1_3 {
+    border-bottom: #363 solid 1px;
+    margin-bottom: 8px;
+    span {
+      background-size: 660px;
+      background-image: url("https://images1.mcmaster.com/init/gfx/home/Fastening-and-Joining-Welding-Brazing-and-Soldering-sprite-120.png?ver=1539608820");
+    }
+    .s9 {
+      background-position: -480px;
+    }
+    .s8 {
+      background-position: -420px;
+    }
+    .s5 {
+      background-position: -240px;
+    }
+    .s7 {
+      background-position: -360px;
+    }
+    .s1 {
+      background-position: 0px;
+    }
+    .s6 {
+      background-position: -300px;
+    }
+    .s11 {
+      background-position: -600px;
+    }
+    .s4 {
+      background-position: -180px;
+    }
+    .s2 {
+      background-position: -60px;
+    }
+    .s3 {
+      background-position: -120px;
+    }
+    .s10 {
+      background-position: -540px;
+    }
+  }
+  .HP_2_1 {
+    border-bottom: #363 solid 1px;
+    margin-bottom: 8px;
+    span {
+      background-size: 1020px;
+      background-image: url("https://images1.mcmaster.com/init/gfx/home/Pipe-Tubing-Hose-and-Fittings-sprite-120.png?ver=1539608820");
+    }
+    .s2 {
+      background-position: -60px;
+    }
+    .s1 {
+      background-position: 0;
+    }
+    .s11 {
+      background-position: -600px;
+    }
+    .s3 {
+      background-position: -120px;
+    }
+    .s15 {
+      background-position: -840px;
+    }
+    .s4 {
+      background-position: -180px;
+    }
+    .s9 {
+      background-position: -480px;
+    }
+    .s16 {
+      background-position: -900px;
+    }
+    .s14 {
+      background-position: -780px;
+    }
+    .s17 {
+      background-position: -960px;
+    }
+    .s7 {
+      background-position: -360px;
+    }
+    .s5 {
+      background-position: -240px;
+    }
+    .s13 {
+      background-position: -720px;
+    }
+    .s10 {
+      background-position: -540px;
+    }
+    .s6 {
+      background-position: -300px;
+    }
+    .s8 {
+      background-position: -420px;
+    }
+    .s12 {
+      background-position: -660px;
+    }
+  }
+  .hp-subcat22 {
+    width: 100%;
+    ul {
+      width: 70%;
+      padding-right: 72px;
+    }
+  }
+  .hp-subcat3 {
+    width: 100%;
+    ul {
+      width: 70%;
+      padding-right: 75px;
+    }
+  }
+  .hp-subcat11 {
+    width: 100%;
+    ul {
+      width: 75%;
+      padding-right: 72px;
+    }
+  }
+  .hp-subcat17 {
+    width: 100%;
+    ul {
+      width: 95%;
+      padding-right: 30px;
+    }
+  }
+  .hp-subcat24 {
+    ul {
+      width: 70%;
+    }
+  }
 }
