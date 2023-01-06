@@ -1,0 +1,146 @@
+@include tablet {
+    .home-page-product-discovery {
+        margin-top: 24px;
+        margin-left: 10px;
+        border-top: 1px solid #CCC;
+    }
+    #product-discovery-cntnr {
+        background-color: #eee;
+        display: flex;
+        height: 468px;
+        min-width: 870px;
+        width: 100%;
+    }
+    #product-discovery-left-cntnr {
+        padding-left: 30px;
+        padding-top: 50px;
+        width: 16%;
+    }
+    #product-discovery-panes-cntnr {
+        width: 80%;
+        min-width: 1050px;
+        margin-left: auto;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+    #product-discovery-left-hdr {
+        color: #000;
+        font-family: "HelveticaNeueeTextPro-Roman",arial,sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        height: 23px;
+        text-align: left;
+        white-space: nowrap;
+    }
+    #product-discovery-left-desc {
+        color: #000;
+        font-family: "HelveticaNeueeTextPro-Roman",arial,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 18px;
+        text-align: left;
+    }
+    #product-discovery-shuffle {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #363;
+        border-color: #363;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        display: flex;
+        height: 35px;
+        padding: 3px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 160px;
+        span {
+            color: #fff;
+            font-family: "DINNextLTPro-Medium",arial,sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            margin-right: 10px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+            padding-left: 0px;
+        }
+    }
+    #product-discovery-shuffle:hover {
+        opacity: 90%;
+    }
+    .product-discovery-pane {
+        display: block;
+        background-color: #fff;
+        border-color: #c4c4c4;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        height: 404px;
+        width: 33.333333333%;
+        padding: 20px;
+        margin-left: 3.5%;
+        box-sizing: border-box;
+        .product-discovery-img-cntnr {
+            display: block;
+            height: 144px;
+        }
+        .product-discovery-img {
+            display: block;
+            max-width: 65%;
+            max-height: 90%;
+            margin: auto;
+            -webkit-transform: translate(0,-50%);
+            -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+            position: relative;
+            top: 50%;
+        }
+        .product-discovery-text-cntnr {
+            padding-top: 20px;
+            height: 160px;
+        }
+        .product-discovery-hdr {
+            font-weight: bold;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            color: #000;
+        }
+        .product-discovery-desc {
+            color: #000;
+            display: block;
+            font-family: "HelveticaNeueeTextPro-Roman",arial,sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            line-height: 22px;
+            padding-top: 10px;
+        }
+        .product-discovery-count {
+            color: #666;
+            font-family: "HelveticaNeueeTextPro-Roman",arial,sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            line-height: normal;
+            padding-top: 40px;
+        }
+
+    }
+    .product-discovery-pane:hover {
+        background-color: #f3f8ee;
+    }    
+}
