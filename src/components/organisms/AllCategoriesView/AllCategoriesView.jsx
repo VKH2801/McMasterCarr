@@ -349,8 +349,6 @@ const AllCategoriesView = () => {
           </div>
         </div>
 
-
-
         <div id="catg3" className="catg Power-Transmission">
           <h1>Power Transmission</h1>
           <div className="subcat hp-subcat24 HP_3_1">
@@ -594,7 +592,8 @@ const AllCategoriesView = () => {
               </li>
               <li>
                 <a href="standard-moisture-removers">
-                  <span className="s7"></span>Moisture Separators &amp; Drain Valves
+                  <span className="s7"></span>Moisture Separators &amp; Drain
+                  Valves
                 </a>
               </li>
               <li>
@@ -625,6 +624,55 @@ const AllCategoriesView = () => {
             </ul>
           </div>
         </div>
+
+
+
+        <div id="catg4" class="catg Sealing">
+          <h1 class="">Sealing</h1>
+          <div class="subcat hp-subcat7 HP_4_1">
+            <h2> </h2>
+            <ul>
+              <li>
+                <a href="o-rings">
+                  <span class="s5"></span>O-Rings
+                </a>
+              </li>
+              <li>
+                <a href="compression-packing">
+                  <span class="s4"></span>Compression Packing
+                </a>
+              </li>
+              <li>
+                <a href="packing-tools">
+                  <span class="s7"></span>Packing Tools
+                </a>
+              </li>
+              <li>
+                <a href="gaskets">
+                  <span class="s2"></span>Gaskets
+                </a>
+              </li>
+              <li>
+                <a href="mechanical-seals">
+                  <span class="s8"></span>Mechanical Seals
+                </a>
+              </li>
+              <li>
+                <a href="door-weatherstripping">
+                  <span class="s6"></span>Weather- stripping
+                </a>
+              </li>
+              <li>
+                <a href="sealants">
+                  <span class="s3"></span>Sealants
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        
       </div>
     </div>
   );
