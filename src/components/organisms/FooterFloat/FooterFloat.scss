@@ -1,0 +1,59 @@
+@include tablet {
+    #Shell_BottomNavWebPart_Cntnr {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 300;
+        a:hover {
+            background-color: beige;
+            text-decoration: underline;
+        }
+    }
+    #BottomNavWebPart_Cntnr {
+        padding-top: 0;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    .TopRul {
+        border-top: solid 1px #999;
+    }
+    .DefltOpaqueBackgrnd {
+        background: #FFF;
+    }
+    #BottomNavWebPart_LnksCntnr {
+        display: inline;
+    }
+    #BottomNavWebPart_TermsCntnr {
+        float: right;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 10px;
+    }
+    
+    .BottomNavLink:hover {
+        
+        text-decoration: underline;
+    }
+    .VerticalSeprt {
+        color: #999;
+        padding: 0px 5px;
+    }
+    .TermsTxt {
+        color: #000;
+        font-size: 11px;
+        display: inline;
+    }
+    .BottomNavLink {
+        display: inline-block;
+        padding: 3px 15px;
+        text-decoration: none;
+        font-size: 11px;
+        color: #000;
+    }
+    .BottomNavLnk {
+        color: #000;
+        text-decoration: none;
+        font-size: 11px;
+    }
+}

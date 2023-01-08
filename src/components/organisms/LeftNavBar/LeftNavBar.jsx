@@ -1,9 +1,27 @@
-import React from "react";
+import React, {useEffect, useState, useRef } from "react";
 
 const LeftNavBar = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+    const listenToScrollEvents = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        if (winScroll > 950) {
+            isVisible && setIsVisible(false);
+        }
+        else {
+            setIsVisible(true);
+        }
+    }
+
+    useEffect (() => {
+        window.addEventListener("scroll", listenToScrollEvents);
+        return () => {
+            window.removeEventListener("scroll", listenToScrollEvents);
+        }
+    }, [])
   return (
-    <div id="HomePageNav" class="homepage-nav">
-      <div id="HomePageNavigationTitle" class="home-page-nav-title">
+    <div id="HomePageNav" className="homepage-nav" style={{display: isVisible ? 'flex' : 'none'}}>
+      <div id="HomePageNavigationTitle" className="home-page-nav-title">
         Choose a Category
       </div>
       <div id="HomePageNavigation">

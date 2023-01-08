@@ -1,14 +1,32 @@
-import React from "react";
+import React, {useEffect, useState, useRef }  from "react";
 
 const AllCategoriesView = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+    const listenToScrollEvents = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        if (winScroll > 1600) {
+            isVisible && setIsVisible(false);
+        }
+        else {
+            setIsVisible(true);
+        }
+    }
+
+    useEffect (() => {
+        window.addEventListener("scroll", listenToScrollEvents);
+        return () => {
+            window.removeEventListener("scroll", listenToScrollEvents);
+        }
+    }, [])
   return (
     <div id="HomePageCategories" className="homepage-categories">
       <div
         id="HomePage"
         className='class="ShellLayout_MainContent_WebPartContainer sticky-reflowed'
       >
-        <div className="WebToolsetWebPart_Cntnr WebToolsetWebPart-border toolset-sticky">
-          <div className="WebToolsetToolWebPart_Cntnr WebToolsetToolWebPart_Aligned_LEFT WebToolsetToolWebPart_TxtTool_Cntnr">
+        <div style={{display: isVisible ? 'flex' : 'none'}} className="WebToolsetWebPart_Cntnr WebToolsetWebPart-border toolset-sticky">
+          <div id="HeaderAllCateg" className="WebToolsetToolWebPart_Cntnr WebToolsetToolWebPart_Aligned_LEFT WebToolsetToolWebPart_TxtTool_Cntnr">
             All Categories
           </div>
         </div>

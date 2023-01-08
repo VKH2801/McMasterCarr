@@ -1,26 +1,14 @@
 @include tablet {
     .homepage-nav {
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
         flex-direction: column;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 50px;
+        position: fixed;
+        top: 80px;
         border-style: none solid none none;
         border-width: 1px;
         border-color: #CCC;
-        -webkit-box-flex: 0;
-        -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
         flex-grow: 0;
-        -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
         flex-shrink: 0;
-        -webkit-flex-basis: 195px;
-        -ms-flex-preferred-size: 195px;
         flex-basis: 195px;
         padding-right: 5px;
         overflow-y: auto;
