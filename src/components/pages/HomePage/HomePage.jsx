@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState, useRef } from "react";
 import Header from '../../organisms/Header/Header';
 import LeftNavBar from '../../organisms/LeftNavBar/LeftNavBar'
 import AllCategoriesView from "../../organisms/AllCategoriesView/AllCategoriesView";
@@ -6,6 +6,24 @@ import FooterHomePage from "../../organisms/FooterHomePage/FooterHomePage";
 import FooterAbout from "../../organisms/FooterAbout/FooterAbout";
 import FooterFloat from "../../organisms/FooterFloat/FooterFloat";
 const HomePage = () => {
+    // const [isVisible, setIsVisible] = useState(true);
+
+    // const listenToScrollEvents = () => {
+    //     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //     if (winScroll > 950) {
+    //         isVisible && setIsVisible(false);
+    //     }
+    //     else {
+    //         setIsVisible(true);
+    //     }
+    // }
+
+    // useEffect (() => {
+    //     window.addEventListener("scroll", listenToScrollEvents);
+    //     return () => {
+    //         window.removeEventListener("scroll", listenToScrollEvents);
+    //     }
+    // }, [])
     return (
         <div className="homePage" >
             <Header></Header>
@@ -22,8 +40,10 @@ const HomePage = () => {
                         <FooterAbout></FooterAbout>
                     </main>
                 </div>
+                <FooterFloat></FooterFloat>
             </div>
-            {/* <FooterFloat></FooterFloat> */}
+            
+            
         </div>
     )
 }

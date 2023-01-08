@@ -1,0 +1,43 @@
+@include tablet {
+    #HomePageServices {
+        display: flex;
+    }
+    .services-web-part-main-cntr {
+        margin: 48px 20px 75px 20px;
+        width: 100%;
+    }
+    .services-web-part-hdr {
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .services-web-part-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services-web-part-li {
+        border-top: 4px solid #363;
+        display: flex;
+        flex-direction: column;
+        margin-top: 36px;
+        padding-top: 15px;
+        width: 17.5%;
+    }
+    .services-web-part-sb-hdr {
+        color: #363;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .services-web-part-sb-txt {
+        color: #000;
+        font-size: 12px;
+        margin-bottom: 23px;
+    }
+    .services-web-part-link {
+        color: #069;
+        font-size: 12px;
+        margin-top: auto;
+    }
+}

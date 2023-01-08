@@ -3,58 +3,58 @@ import React from "react";
 const FooterFloat = () => {
   return (
     <footer id="Shell_BottomNavWebPart_Cntnr">
-      <div id="BottomNavWebPart_Cntnr" class="DefltOpaqueBackgrnd TopRul">
+      <div id="BottomNavWebPart_Cntnr" className="DefltOpaqueBackgrnd TopRul">
         <div id="BottomNavWebPart_LnksCntnr">
-          <a class="BottomNavLnk" id="BottomNavWebPart_HomeLnk" href="/">
+          <a className="BottomNavLnk" id="BottomNavWebPart_HomeLnk" href="/">
             Home
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_ContactLnk"
             href="/contact"
           >
             Locations
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_ReturnsLnk"
             href="/returns"
           >
             Returns
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_CareersLnk"
             href="/careers"
           >
             Careers
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_MobileLnk"
             href="/mobile"
           >
             Mobile App
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_SWAddInLnk"
             href="/solidworksaddin"
           >
             Solidworks Add-In
           </a>
-          <span class="VerticalSeprt">|</span>
-          <a class="BottomNavLnk" id="BottomNavWebPart_HelpLnk" href="/help">
+          <span className="VerticalSeprt">|</span>
+          <a className="BottomNavLnk" id="BottomNavWebPart_HelpLnk" href="/help">
             Help
           </a>
-          <span class="VerticalSeprt">|</span>
+          <span className="VerticalSeprt">|</span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_SiteSettingsLnk"
             href="/settings"
           >
@@ -62,11 +62,11 @@ const FooterFloat = () => {
           </a>
         </div>
         <div id="BottomNavWebPart_TermsCntnr">
-          <span class="TermsTxt" style="display: inline;">
+          <span className="TermsTxt" >
             By using this website, you agree to our{" "}
           </span>
           <a
-            class="BottomNavLnk"
+            className="BottomNavLnk"
             id="BottomNavWebPart_TermsandConditionsLnk"
             href="/termsandconditions"
           >
