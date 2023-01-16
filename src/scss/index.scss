@@ -12,12 +12,17 @@
 // ------------ Import your scss files here ---------------
 @import '../App.scss';
 // Import Atoms Components
-
+@import "../components/atoms/LengthScroll_LefNavBar/LengthScroll.scss";
+@import "../components/atoms/HeadType_LefNavBar/HeadType.scss";
+@import "../components/atoms/Materials_LefNavBar/Materials.scss";
+@import "../components/atoms/Finishing_LefNavBar/Finish.scss";
 
 // Import molecules Components
 @import "../components/molecules/LogoHeader/style.scss";
 @import "../components/molecules/SearchBarHeader/style.scss";
 @import "../components/molecules/OrderButtonHeader/style.scss";
+@import "../components/molecules/FillterScrews/FillterScrews.scss";
+
 
 // Import organisms Components
 @import '../components/organisms/FooterFloat/FooterFloat.scss';
@@ -30,6 +35,7 @@
 @import '../components/organisms/FooterAbout/FooterAbout.scss';
 @import '../components/organisms/FooterFloat/FooterFloat.scss';
 @import '../components/organisms/HeaderPage/index.scss';
+@import '../components/organisms/ScrewsCategories/ScrewsCategories.scss';
 
 // Import pages Components
 @import '../components/pages/HomePage/HomePage.scss';

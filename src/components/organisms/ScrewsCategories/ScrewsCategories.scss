@@ -1,0 +1,27 @@
+@include tablet {
+    #ShellLayout_MainContent_Cntnr {
+        border-right: 0;
+        border-left: none;
+        height: 100%;
+        width: 100%;
+    }
+    .ShellLayout_MainContent_Inner_SecondaryContent_Collapsed {
+        height: 100%;
+    }
+    #MainContent {
+        background-color: rgb(255 255 255);
+        overflow: auto;
+        height: 100%;
+        padding: 0 10px 0 20px;
+        position: relative;
+        zoom: 1;
+        display: block;
+    }
+    .ShellLayout_MainContent_ProdPage_Loaded {
+        padding: 0!important;
+        overflow: hidden!important;
+    }
+    #ProductPage {
+        width: 100%;
+    }
+}

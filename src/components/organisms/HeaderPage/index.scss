@@ -1,0 +1,74 @@
+@include tablet {
+    #ShellLayout_Header_Cntnr {
+        background-color: #fff;
+        border-bottom: 2px solid #fed700;
+        box-shadow: 0 7px 0 0 #fff;
+        left: 0;
+        min-width: 525px;
+        padding-bottom: 5px;
+        position: fixed;
+        top: 0;
+        height: 75px;
+        transition: height .3s,transform .5s;
+        width: 100%;
+        z-index: 9999;
+    }
+    #BrowseCatalog_ButtonCntnr {
+        display: inline-block;
+        position: absolute;
+        left: 12px;
+        top: -24px;
+        transition: top .3s,transform .5s;
+        .overlay {
+            background: #999;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: opacity .3s ease-out 0s;
+            z-index: 10000000;
+        }
+    }
+    .active {
+        opacity: 0.6;
+        pointer-events: auto;
+    }
+    .browse-catalog-menu {
+        background-color: white;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        height: 100%;
+        left: -400px;
+        position: fixed;
+        top: 0;
+        -webkit-transition: left .3s ease-out 0s;
+        transition: left .3s ease-out 0s;
+        width: 400px;
+        z-index: 10000005;
+        header {
+
+        }
+    }
+    #BrowseCatalog_ButtonCntnr img#BrowseCatalog_ButtonImg {
+        cursor: pointer;
+        float: left;
+        height: 9px;
+        width: 9px;
+        padding-right: 4px;
+    }
+    #BrowseCatalog_Button {
+        color: #363;
+        cursor: pointer;
+        float: left;
+        font-family: "FuturaLTPro-BoldCond",arial,sans-serif;
+        font-size: 11px;
+        letter-spacing: .035em;
+        position: relative;
+        top: -3px;
+    }
+}
