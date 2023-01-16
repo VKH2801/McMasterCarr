@@ -5,7 +5,7 @@ import SearchBarHeader from "../../molecules/SearchBarHeader/index";
 import OrderButtonHeader from '../../molecules/OrderButtonHeader'
 
 
-const Header = () => {
+const Header = (props) => {
   const [openDialogEmailUs, setOpenDialogEmailUs] = useState(false);
   const [openDialogLogin, setOpenDialogLogin] = useState(false);
   const [showPassword, setshowPassword] = useState(false);

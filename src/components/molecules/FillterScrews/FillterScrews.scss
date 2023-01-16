@@ -1,0 +1,239 @@
+@include tablet {
+    .SpecSrch_CntnrWithSlider {
+        margin-left: 0;
+        padding-left: 10px;
+        z-index: 9998;
+        position: relative;
+        background-color: rgb(255 255 255);
+    }
+    a {
+        text-decoration: none;
+    }
+    .jg {
+        border-top: solid 1px rgb(204 204 204);
+        border-right: solid 1px rgb(204 204 204);
+        border-bottom: solid 1px rgb(204 204 204);
+        height: 100%;
+        float: left;
+        margin-left: 10px;
+    }
+    .jh {
+        background-color: rgb(238 238 238);
+        position: relative;
+        float: left;
+        cursor: pointer;
+        width: 199px;
+        height: 100%;
+        overflow: auto;
+        overflow-x: hidden;
+        scrollbar-color: #999 #cbcbcb;
+        scrollbar-track-color: #cbcbcb;
+        scrollbar-base-color: #999;
+    }
+    .SpecSrch_Pane {
+        background-color: rgb(238 238 238);
+        position: relative;
+        line-height: 13px;
+    }
+    .mv {
+        padding-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+    }
+    .jl {
+        display: block;
+    }
+    .SpecSrch_Title {
+        position: fixed;
+        z-index: 99;
+        line-height: 16px;
+        padding: 2px 0 0 0;
+        top: 79px;
+        height: 21px;
+        width: 177px;
+        background-color: rgb(238 238 238);
+    }
+    .nm {
+        height: 16px;
+    }
+    .oc {
+        border-top-style: solid;
+        border-top-color: rgb(153 153 153);
+        border-bottom-style: solid;
+        border-bottom-color: rgb(255 255 255);
+        border-top-width: 1px;
+        border-bottom-width: 2px;
+        clear: both;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    .nl {
+        height: 23px;
+    }
+    .SpecSrch_AttrShow {
+        display: block;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .ni {
+        vertical-align: top;
+        tr {
+            width: 142px;
+        }
+    }
+    .SpecSrch_Lbl {
+        cursor: default;
+    }
+    .Hide {
+        display: none;
+    }
+    .lc {
+        font-family: arial,helvetica,sans-serif;
+        font-size: 12px;
+        text-align: left;
+        font-weight: bold;
+        padding-left: 3px;
+        padding-top: 2px;
+        padding-bottom: 3px;
+        vertical-align: top;
+        color: rgb(51 51 51);
+        width: 100%;
+    }
+    .SpecSrch_Value {
+        color: rgb(0 102 153);
+        width: 163px;
+    }
+    .ng {
+        font-family: arial,helvetica,sans-serif;
+        font-size: 12px;
+        line-height: 13px;
+        text-decoration: none;
+    }
+    .mr {
+        padding-bottom: 3px;
+    }
+    .mp {
+        padding-top: 2px;
+    }
+    .mg {
+        padding-left: 14px;
+    }
+    .od {
+        color: inherit;
+        display: block;
+    }
+    .oc {
+        border-top-style: solid;
+        border-top-color: rgb(153 153 153);
+        border-bottom-style: solid;
+        border-bottom-color: rgb(255 255 255);
+        border-top-width: 1px;
+        border-bottom-width: 2px;
+        clear: both;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    .mn {
+        margin-top: 12px;
+    }
+    .SpecSrch_AttrShow {
+        display: block;
+    }
+    .SpecSrch_AttrTitle_WithIndustrialInfo {
+        width: 100%;
+    }
+    .SpecSrch_AttrHeading_Compare_IndustrialInfoIconPadding {
+        padding-left: 2px;
+        padding-right: 2px;
+        opacity: 1;
+
+    }
+    .SpecSrch_IndustrialInfoIconAndCaption {
+        transition: opacity .3s ease-in-out;
+    }
+    .SpecSrch_AttrTitleAndIconContainer_FillRow {
+        justify-content: space-between;
+    }
+    .SpecSrch_AttrTitleAndIconContainer {
+        display: flex;
+    }
+    #SpecSrch_imgMoreInfo:hover {
+        transform: scale(1.2);
+    }
+    .SpecSrch_CntxtSrchBx_Wrapper {
+        margin-left: 2px;
+    }
+    .lo {
+        width: 122px;
+    }
+    .mx {
+        width: 173px;
+        height: 144px;
+        border-color: rgb(153 153 153);
+        border-style: solid;
+        background-color: rgb(255 255 255);
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-color: #999 #cbcbcb;
+        scrollbar-track-color: #cbcbcb;
+        scrollbar-base-color: #999;
+        border: solid 1px rgb(153 153 153);
+    }
+    .my {
+        margin-top: 3px;
+        margin-left: 2px;
+    }
+    .SpecSrch_ValAndIndustrialInfoContainerHorizontal {
+        display: flex;
+    }
+    .Wrd {
+        white-space: nowrap;
+    }
+    .SpecSrch_IndustrialInfoIconAndCaption {
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+    .SpecSrch_AttrShow {
+        display: block;
+    }
+    .lb {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+    .LengthInput {
+        width: 122px;
+        
+    }
+    #SpecSrch_Cntnr {
+        a:hover {
+            background-color:#ffffc2;
+            color: #000;
+        }
+        span:hover {
+            background-color:#ffffc2;
+            color: #000;
+        }
+    }
+    #SS_E_884843973393_884843973393 {
+        
+    }
+    .SpecSrch_IndustrialInfoIcon {
+        display: block;
+        height: 12px;
+        width: 12px;
+    }
+    .SpecSrch_AttrHeading_Compare_IndustrialInfoIconPadding {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .SpecSrch_IndustrialInfoIconAndCaption {
+        transition: opacity .3s ease-in-out;
+    }
+}

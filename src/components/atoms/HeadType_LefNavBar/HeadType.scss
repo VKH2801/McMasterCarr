@@ -1,0 +1,36 @@
+@include tablet {
+    .nb {
+        padding-top: 4px;
+        padding-bottom: 2px;
+    }
+    .ma {
+        text-align: center;
+    }
+    .ly {
+        vertical-align: bottom;
+        padding-right: 14px;
+    }
+    .nj {
+        vertical-align: middle;
+    }
+    .ng {
+        font-family: arial,helvetica,sans-serif;
+        font-size: 12px;
+        line-height: 13px;
+        text-decoration: none;
+    }
+    .mc {
+        text-align: center;
+    }
+    .md {
+        padding-right: 2px;
+    }
+    .SpecSrch_Value:hover {
+        background-color: #ffffc2;
+        color: #000;
+    }
+    .tr:hover {
+        background-color: #ffffc2;
+        color: #000;
+    }
+}
