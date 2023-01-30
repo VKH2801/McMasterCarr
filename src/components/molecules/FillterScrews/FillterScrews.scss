@@ -236,4 +236,9 @@
     .SpecSrch_IndustrialInfoIconAndCaption {
         transition: opacity .3s ease-in-out;
     }
+    .clearDiv {
+        clear: both;
+        line-height: 0;
+        height: 0;
+    }
 }

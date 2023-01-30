@@ -4,6 +4,10 @@ import HeadType from "../../atoms/HeadType_LefNavBar/HeadType";
 import Materials from "../../atoms/Materials_LefNavBar/Materials";
 import Finish from "../../atoms/Finishing_LefNavBar/Finish";
 import DriveStyle from "../../atoms/DriveStyle_LefNavBar/DriveStyle";
+import Threading from "../../atoms/Threading_LeftNavBar/Threading";
+import SocketHeadProfile from "../../atoms/SocketHeadProfile_LeftNavBar/SocketHeadProfile";
+import HeadDiameter from "../../atoms/HeadDiameter_LefNavBar/HeadDiameter";
+import HeadHeight from "../../atoms/HeadHeight_LefNavBar/HeadHeight";
 
 export default function FillterScrews() {
   return (
@@ -6112,11 +6116,20 @@ export default function FillterScrews() {
                 </div>
               </div>
               <div class="mn oc"></div>
-                <DriveStyle></DriveStyle>
+              <DriveStyle></DriveStyle>
+              <div class="mn oc"></div>
+              <Threading></Threading>
+              <div class="mn oc"></div>
+              <SocketHeadProfile></SocketHeadProfile>
+              <div class="mn oc"></div>
+              <HeadDiameter></HeadDiameter>
+              <div class="mn oc"></div>
+              <HeadHeight></HeadHeight>
             </div>
           </div>
         </div>
       </div>
+      <div class="clearDiv"></div>
     </div>
   );
 }
